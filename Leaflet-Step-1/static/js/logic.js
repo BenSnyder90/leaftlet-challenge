@@ -5,7 +5,7 @@
       ],
       zoom: 5
     });
-// Define streetmap layers
+// Define satellite map layer
 L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 18,
@@ -53,7 +53,7 @@ d3.json(queryUrl, function(data) {
 
     //Function that gets the radius according to the magnitude to plot relative strength of the earthquake
     function getradius(magnitude){
-        return magnitude*4;
+        return magnitude*5;
     }
     
     // Create a GeoJSON layer containing the features array on the earthquakeData object
@@ -65,13 +65,13 @@ d3.json(queryUrl, function(data) {
       pointToLayer: function (feature, latlng) {
                 var magnitude = feature.properties.mag;
                 return new L.circleMarker(latlng, {
-            color: getcolor(magnitude),
+            color: "Black",
+            weight: 1,
             fillColor: getcolor(magnitude),
             radius: getradius(magnitude),
             fillOpacity: 1
         });
       }
-    
     //Adds the earthquake layer to the map
     }).addTo(myMap);
 
