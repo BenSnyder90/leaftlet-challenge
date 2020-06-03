@@ -12,7 +12,7 @@
   * <b>/static/css/style.css</b> - Contains CSS file with styles for legend on map
   * <b>/static/js/logic.js</b> - Reads the GeoJSON URL and plots earthquake datapoints on Mapbox map using JavaScript
   * <b>Index.html</b> - Webpage of Earthquake Map
-
+----------------------------
 ### Results
 <b>Part 1</b>
 ![Part 1 Results](Leaflet-Step-1/Part1_Results.PNG)
