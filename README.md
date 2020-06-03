@@ -8,7 +8,7 @@
 * Create a legend to provide context to the data
 ----------------------------
 ### Contents
-* <b>Leaflet-Step-1 - 1st part of the Assignment
+* <b>Leaflet-Step-1</b> - 1st part of the Assignment
   * <b>/static/css/style.css</b> - Contains CSS file with styles for legend on map
   * <b>/static/js/logic.js</b> - Reads the GeoJSON URL and plots earthquake datapoints on Mapbox map using JavaScript
   * <b>Index.html</b> - Webpage of Earthquake Map
